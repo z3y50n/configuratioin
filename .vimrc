@@ -52,6 +52,7 @@ let g:ycm_global_ycm_extra_conf = '/home/dimitris/.vim/bundle/YouCompleteMe/.ycm
 set completeopt-=preview
 nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
+nnoremap <silent> <leader>yr :YcmRestartServer<CR>
 
 " NERDTree Maps
 nnoremap <leader>n :NERDTreeFocus<CR>
