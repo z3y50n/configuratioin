@@ -39,7 +39,6 @@ noremap <c-l> <c-w><c-l>
 map <leader>bn :bnext<CR>
 map <leader>bp :bprev<CR>
 
-
 "-- Vundle --"
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
