@@ -1,0 +1,61 @@
+{
+  "vim.hlsearch": true,
+  "explorer.confirmDelete": false,
+  "window.openFoldersInNewWindow": "on",
+  "vim.vimrc.path": "$HOME/.vimrc",
+  "vim.vimrc.enable": true,
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Close window on Control + w
+    {
+      "before": ["<C-w>"],
+      "commands" : ["workbench.action.closeActiveEditor"],
+    },
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo"
+        }
+      ]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+  ],
+  "vim.smartRelativeLine": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "vim.commandLineModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [],
+  "editor.renderWhitespace": "all",
+  "git.openRepositoryInParentFolders": "never",
+  "explorer.compactFolders": false,
+  "editor.minimap.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": false,
+  "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+  "editor.rulers": [
+    80
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+}
